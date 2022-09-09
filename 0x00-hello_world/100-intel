@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc $CFILE -mno-gnu-as > $CFILE.s
