@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - main function
- * Return : 0 end program successfully
+ * main - main method
+ * Return: 0 to terminate
  */
 
 int main(void)
