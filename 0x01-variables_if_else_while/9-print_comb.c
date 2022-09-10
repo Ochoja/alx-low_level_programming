@@ -6,18 +6,17 @@
 
 int main(void)
 {
-	/*loop variables*/
-	int i;
-	int j;
+	int number = 0;
 
-	for (i = '0'; i <= '9'; i++)
+	for (number = '0'; number <= '9' ; number++)
 	{
-		for (j = '0'; j <= '9'; i++)
-		{
-			putchar(i);
-			putchar(j);
+		if (number != 9){
+			putchar(number);
 			putchar(',');
 			putchar(' ');
+		}
+		else {
+			putchar(number);
 		}
 	}
 
