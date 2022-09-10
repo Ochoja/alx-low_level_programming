@@ -3,6 +3,9 @@
 #include <time.h>
 /**
  * main: main function block
+ *
+ * Description: get the last digit of a value
+ *
  * Return: 0 to end program
  */
 
