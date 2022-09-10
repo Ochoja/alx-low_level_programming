@@ -9,7 +9,7 @@ int main(void)
 	int number = 0;
 
 	/*print numbers from 0-9*/
-	while (i <= 9)
+	while (number <= 9)
 	{
 		printf("%d", number);
 		number++;
