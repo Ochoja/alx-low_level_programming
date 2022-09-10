@@ -15,7 +15,10 @@ int main(void)
 		if (number != '9')
 			putchar(',');
 
-		putchar(' ');
+		if (number == 9)
+			putchar('\n');
+		else
+			putchar(' ');
 	}
 
 	return (0);
