@@ -3,7 +3,7 @@
  * Return: check functions for return types
  */
 
-void _putchar( char a )
+int _putchar(char c)
 {
-	putchar(a);
+	return (write(1, &c, 1));
 }
