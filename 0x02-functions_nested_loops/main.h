@@ -1,4 +1,4 @@
-#include <uninstd.h>
+#include <unistd.h>
 /**
  * _putchar - returns characters
  * Return: check functions for return types
