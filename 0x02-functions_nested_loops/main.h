@@ -1,3 +1,4 @@
+#include <uninstd.h>
 /**
  * _putchar - returns characters
  * Return: check functions for return types
