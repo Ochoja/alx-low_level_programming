@@ -11,7 +11,7 @@ void jack_bauer(void)
 	int minute1 = 0;
 	int minute2 = 0;
 
-	while(1)
+	while (1)
 	{
 		_putchar(hour1 + '0');
 		_putchar(hour2 + '0');
@@ -26,5 +26,6 @@ void jack_bauer(void)
 		hour2++;
 		minute1++;
 	        minute2++;
+		_putchar('\n');
 	}
 }
