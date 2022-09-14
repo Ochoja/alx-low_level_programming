@@ -8,8 +8,8 @@ void jack_bauer(void)
 {
 	int hour1 = 0;
 	int hour2 = 0;
-	int minute1 0;
-	int minute2 0;
+	int minute1 = 0;
+	int minute2 = 0;
 
 	while(1)
 	{
