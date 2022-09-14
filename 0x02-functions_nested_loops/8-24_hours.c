@@ -23,13 +23,9 @@ void jack_bauer(void)
 			for (minute1 = 0; minute1 <= 5; minute1++)
 			{
 				_putchar(minute1 + '0');
-
-				for (minute2 = 0; minute2 <= 9; minute2++)
-				{
-					_putchar(minute2 + '0');
-					_putchar('\n');
-				}
 			}
 		}
+
+		_putchar('\n');
 	}
 }
