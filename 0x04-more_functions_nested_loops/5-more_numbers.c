@@ -10,13 +10,23 @@ void more_numbers(void)
 	int i;
 	int j;
 
+	/*number printed*/
+	int num = '0';
+
 	for (i = 1; i <= 10; i++)
 	{
-		for (j = '0'; j <= '14'; j++)
+		for (j = 0; j <= 14; j++)
 		{
-			_putchar(j);
-		}
+			if (j > 9)
+			{
+				num = '0';
+				_putchar('1');
+			}
 
-		_putchar('\n');
+			_putchar(num);
+			num++;
+		}
 	}
+
+	_putchar('\n');
 }
