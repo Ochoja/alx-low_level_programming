@@ -17,16 +17,21 @@ void more_numbers(void)
 	{
 		for (j = 0; j <= 14; j++)
 		{
-			if (j > 9)
-			{
+			/**reset number printed**/
+			if (j == 10)
 				num = '0';
+
+			/**input 1 before number printed**/
+			if (j > 9)
 				_putchar('1');
-			}
+
 
 			_putchar(num);
 			num++;
 		}
+
+		_putchar('\n');
+		num = '0';
 	}
 
-	_putchar('\n');
 }
