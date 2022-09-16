@@ -8,8 +8,8 @@
 
 int main(void)
 {
-	long number = 612852475143;
-	int primeFactor = 2;
+	long int number = 612852475143;
+	long int primeFactor = 2;
 
 	/*counter variable*/
 	long i,j;
@@ -29,4 +29,6 @@ int main(void)
 	}
 
 	printf("%ld\n", primeFactor);
+
+	return (0);
 }
