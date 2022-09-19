@@ -6,7 +6,7 @@
 
 void rev_string(char *s)
 {
-	char tempString[];
+	char *tempString = "";
 	int total = 0;
 	int i;
 
