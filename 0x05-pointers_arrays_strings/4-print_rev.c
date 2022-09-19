@@ -7,7 +7,7 @@
 void print_rev(char *s)
 {
 	/**holds length of string**/
-	int length;
+	int length = '0';
 
 	/**counter variable**/
 	int i;
