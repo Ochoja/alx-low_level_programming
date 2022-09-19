@@ -7,7 +7,7 @@
 void print_rev(char *s)
 {
 	/**holds length of string**/
-	int length = '0';
+	int length = 0;
 
 	/**counter variable**/
 	int i;
@@ -16,8 +16,6 @@ void print_rev(char *s)
 
 	for (i = 0; *(s + i) != '\0'; i++)
 		length++;
-
-	_putchar(length);
 
 	for (i = length; i > 0; i--)
 	{
