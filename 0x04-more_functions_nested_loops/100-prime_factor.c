@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	long int number = 612852475143;
+	long int number = 1231952;
 	long int primeFactor = 2;
 
 	/*counter variable*/
