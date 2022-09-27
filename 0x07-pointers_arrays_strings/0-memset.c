@@ -4,7 +4,7 @@
  * @s: pointer to string
  * @b: character that fills n memory locations
  * @n: holds number of memory locations to be filled
- * Return: pointer to memory location 
+ * Return: pointer to memory location
  */
 
 char *_memset(char *s, char b, unsigned int n)
