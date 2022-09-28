@@ -6,23 +6,25 @@
  * Return: length of prefix substring
  */
 
-
 unsigned int _strspn(char *s, char *accept)
 {
 	int length = 0;
 	int i = 0;
 	int j = 0;
 
-	while ( (s[i] >= 65 && s[i] < 92) || (s[i] >= 97 && s[i] < 123) )
+	/**compare characters in s with all**/
+	/**charcters in accept using their**/
+	/**ASCII values**/
+	while ((s[i] >= 65 && s[i] < 92) || (s[i] >= 97 && s[i] < 123))
+	{
+		while (accept[j++])
 		{
-			while (accept[j++])
-			{
-				if (s[i] == accept[j])
-					length++;
-			}
-			j = 0;
-			i++;
+			if (s[i] == accept[j])
+				length++;
 		}
+		j = 0;
+		i++;
+	}
 
 	return (length);
 }
