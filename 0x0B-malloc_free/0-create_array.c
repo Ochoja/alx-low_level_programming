@@ -16,7 +16,7 @@ char *create_array(unsigned int size, char c)
 	if (size == 0)
 		return (NULL);
 
-	while (i < size - 1)
+	while (i < size)
 	{
 		p[i] = c;
 		i++;
