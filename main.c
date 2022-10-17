@@ -25,5 +25,7 @@ int main(void)
 
 	modif_my_char_var(p, c);
 
+	printf("\n\nThe value of 'c' has been modified to %c\n", c);
+
 	return (0);
 }
