@@ -2,12 +2,12 @@
 
 void modif_my_char_var(char *cc, char ccc)
 {
-	*cc = 'o';
-	ccc = 'l';
-
 	printf("\n\n");
 	printf("The value of pointer 'cc' is %p\n", cc);
 	printf("The value of the address %p is %c\n", cc, *cc);
+
+	*cc = 'o';
+	ccc = 'l';
 }
 
 
