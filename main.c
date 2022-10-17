@@ -1,31 +1,26 @@
 #include <stdio.h>
 
-/**
- * printParam - modify and print integer
- * @a: a pointer to integer that would be modified
- * Return: void
- */
-void printParam(int *a)
+void modif_my_char_var(char *cc, char ccc)
 {
-	*a = 402;
-	printf("%d is the new value of x\n", *a);
+	*cc = 'o';
+	ccc = 'l';
 }
 
 
-/**
- * main - main function
- * Return: always 0
- */
 int main(void)
 {
-        int x = 5;
-	int *ptr = &x;
+	char c;
+	char *p;
 
-	printf("%d is the value of 'x'\n", x);
-	printParam(ptr);
+	p = &c;
+	c = 'H';
 
-	if (*ptr == x)
-		printf("'x' has been modified\n");
+	printf("The value of 'c' is %c\n", c);
+	printf("The address of 'c' is %p\n", &c);
+	printf("The value of 'p' is %p\n", p);
+	
 
-	return 0;
+	modif_my_char_var(p, c);
+
+	return (0);
 }
