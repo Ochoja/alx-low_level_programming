@@ -13,6 +13,10 @@ int main(void)
 	printf("*(a + 2) : %d\n", *(a + 2));
 
 	printf("---------------\n");
+	printf("Value of a : %d\n", a);
+	printf("Value of (a+1): %d\n", a + 1);
+	printf("Value of &a+1: %d\n", &a + 1);
+
 
 	return (0);
 }
