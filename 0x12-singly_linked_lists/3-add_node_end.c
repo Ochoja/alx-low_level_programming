@@ -13,8 +13,6 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	unsigned int len = 0;
 	int i = 0;
-	/**list pointer used to traverse**/
-	list_t *listPtr = *head;
 	list_t *node = (list_t *)malloc(sizeof(list_t));
 
 	if (node == NULL)
@@ -28,11 +26,24 @@ list_t *add_node_end(list_t **head, const char *str)
 	node->str = strdup(str);
 	node->next = NULL;
 
-	/**traverse to end of list**/
-	while (listPtr->next != NULL)
-		listPtr = listPtr->next;
-
-	listPtr->next = node;
-
 	return (node);
+}
+
+
+/**
+ * traverse - move to last node
+ * @head: pointer to head node
+ * Return: pointer to last node
+ */
+list_t *traverse(list_t **head)
+{
+	list_t *ptr = *head;
+
+	if (ptr == NULL || ptr->next == NULL)
+		return (ptr);
+	else
+	{
+		while (ptr->next != NULL)
+			ptr = ptr->next;
+	}
 }
