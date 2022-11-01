@@ -1,7 +1,6 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include "lists.h"
-#include <stdio.h>
 
 /**
  * add_node - adds node to beginning of a list
@@ -20,7 +19,7 @@ list_t *add_node(list_t **head, const char *str)
 		len++;
 
 	node->len = len;
-	node->str = (char*)str;
+	node->str = (char *)str;
 	node->next = *head;
 
 	*head = (list_t *)node;
