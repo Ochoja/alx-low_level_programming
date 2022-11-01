@@ -5,9 +5,9 @@
 
 /**
  * add_node - adds node to beginning of a list
- * @head: pointer to pointer to list
+ * @head: pointer to head node
  * @str: string to be added
- * Return: pointer to list
+ * Return: pointer to list or NULL
  */
 
 list_t *add_node(list_t **head, const char *str)
@@ -25,5 +25,8 @@ list_t *add_node(list_t **head, const char *str)
 
 	*head = (list_t *)node;
 
-	return (node);
+	if (head)
+		return (node);
+	else
+		return (NULL);
 }
