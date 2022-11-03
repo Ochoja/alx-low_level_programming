@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * list_len - returns length of a list
+ * listint_len - returns length of a list
  * @h: pointer to head node
  * Return: size of list
  */
