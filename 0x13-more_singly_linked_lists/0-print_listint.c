@@ -2,19 +2,13 @@
 #include <stdio.h>
 
 /**
- * print_listint - prints all the elements of a listint_t list.
- *
- * @h: head of linklist node
- *
- * Return: the number of nodes
- *
+ * print_listint - prints all elements of a list
+ * @h: Pointer to head node
+ * Return: Number of nodes
  */
 size_t print_listint(const listint_t *h)
 {
 	size_t num = 0;
-
-	if (h == NULL)
-		return ((size_t)NULL);
 
 	while (h != NULL)
 	{
@@ -22,5 +16,6 @@ size_t print_listint(const listint_t *h)
 		h = h->next;
 		num++;
 	}
+
 	return (num);
 }
