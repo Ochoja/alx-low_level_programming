@@ -4,7 +4,7 @@
 /**
  * sum_listint - adds all integers in an int list
  * @head: pointer to head node
- * @Return: sum of list data
+ * Return: sum of list data
  */
 int sum_listint(listint_t *head)
 {
