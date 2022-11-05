@@ -9,14 +9,14 @@
 int pop_listint(listint_t **head)
 {
 	int data = 0;
+	listint_t *ptr = *head;
 
 	if (*head == NULL)
 		return (0);
-	else
-	{
-		data = (*head)->n;
-		free(*head);
-	}
+
+	data = (*head)->n;
+	(*head) = (*head)->next;
+	free(ptr);
 
 	return (data);
 }
