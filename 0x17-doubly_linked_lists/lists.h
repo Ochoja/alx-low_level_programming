@@ -1,5 +1,5 @@
-#ifndef LIST_H
-#define LIST_H
+#ifndef DLISTS_H
+#define DLISTS_H
 
 /**
  * struct dlistint_s - doubly linked list
