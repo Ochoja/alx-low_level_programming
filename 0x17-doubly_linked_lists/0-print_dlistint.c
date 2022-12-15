@@ -8,19 +8,12 @@
 size_t print_dlistint(const dlistint_t *h)
 {
 	size_t n = 0;
-	dlistint_t *hold = malloc(sizeof(dlistint_t));
+	const dlistint_t *hold = h;
 
-	hold = h;
-	if (hold == NULL)
-		return (NULL);
-
-	printf("%d\n", hold->next);
-	n++;
-
-	while (hold->next != NULL)
+	while (hold != NULL)
 	{
-		hold = hold->next;
 		printf("%d\n", hold->n);
+		hold = hold->next;
 		n++;
 	}
 
